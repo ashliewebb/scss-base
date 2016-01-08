@@ -1,0 +1,11 @@
+{
+  "name": "scss-base",
+  "description": "Base file structure for new projects using sass. Includes gulfile.js configuration. Includes Sass frameworks Bourbon and Neat.",
+  "devDependencies": {
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
