@@ -1,0 +1,5 @@
+// function get-layout
+// Get layout breakpoint
+@function get-layout($size) {
+    @return map-get($breakpoints, $size);
+}

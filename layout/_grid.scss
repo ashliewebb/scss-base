@@ -1,0 +1,123 @@
+.inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding-left: $base-spacing-unit;
+    padding-right: $base-spacing-unit;
+
+    @include media(get-layout(xxl)) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+    text-align: right;
+}
+
+.layout-container {
+    @include outer-container;
+}
+
+.layout-two-columns {
+    @include outer-container;
+    @include fill-parent;
+
+    > .column {
+        @include media(get-layout(large)) {
+            @include span-columns(6);
+            @include omega(2n);
+        }
+    }
+
+    &--3-9 {
+        @include outer-container;
+
+        > .column-3 {
+            @include media(get-layout(large)) {
+                @include span-columns(3);
+            }
+        }
+
+        > .column-9 {
+            @include media(get-layout(large)) {
+                @include span-columns(9);
+            }
+        }
+
+    }
+
+    &--4-8 {
+        @include outer-container;
+
+        > .column-4 {
+            @include media(get-layout(large)) {
+                @include span-columns(4);
+            }
+        }
+
+        > .column-8 {
+            @include media(get-layout(large)) {
+                @include span-columns(8);
+            }
+        }
+
+    }
+
+    &--5-7 {
+        @include outer-container;
+        @include fill-parent;
+        clear: left;
+
+        > .column-5 {
+            @include media(get-layout(large)) {
+                @include span-columns(5);
+            }
+        }
+
+        > .column-7 {
+            @include media(get-layout(large)) {
+                @include span-columns(7);
+            }
+        }
+
+    }
+}
+
+.layout-three-columns {
+    @include outer-container;
+    @include fill-parent;
+
+    > .column {
+        @include media($breakpoint-small-large) {
+            @include span-columns(6);
+            @include omega(2n);
+        }
+
+        @include media(get-layout(large)) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+    }
+}
+
+.layout-four-columns {
+    @include outer-container;
+    @include fill-parent;
+
+    > .column {
+        @include media($breakpoint-large-below) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+
+        @include media(get-layout(large)) {
+            @include span-columns(3);
+            @include omega(4n);
+        }
+    }
+}

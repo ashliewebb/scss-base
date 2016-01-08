@@ -1,0 +1,23 @@
+$button-primary-text-color: $color-neutral;
+$button-primary-border: $color-neutral;
+
+
+%button-reset {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0 none;
+    border-radius: 0;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button {
+    @extend %button-reset;
+    line-height: 1;
+    display: inline-block;
+    white-space: normal;
+}

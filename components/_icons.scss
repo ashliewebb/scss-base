@@ -1,0 +1,17 @@
+.icon {
+    float: left;
+    text-indent: -999em;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        background-size: contain;
+        float: left;
+    }
+
+    &--modifier {
+        &:before {
+            background-image: url('images/icons/icon.svg');
+        }
+    }
+}

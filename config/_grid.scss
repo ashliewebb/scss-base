@@ -1,0 +1,40 @@
+@import 'neat-helpers';
+
+$base-spacing-unit: 8px;
+
+
+/* Grid settings */
+$outer-gutter: 0 !global;
+$min-width: 320px;
+$max-width: 1260px;
+$column: $base-spacing-unit;
+$gutter: $base-spacing-unit;
+$visual-grid: true;
+$visual-grid-index: front;
+
+
+/* Breakpoints */
+$breakpoints: (
+        xxxl: 78.75em,    /* 1260px */
+        xxl: 64em,        /* 1024px */
+        xl: 58.75em,      /* 940px */
+        large: 48.0625em, /* 769px */
+        medium: 37.5em,   /* 600px */
+        small: 30em,      /* 480px */
+        x-small: 20em,    /* 320px */
+        xx-small: 17.5em  /* 280px */
+);
+
+$breakpoint-large-xxxl: min-width 48.0625em max-width 78.75em;
+$breakpoint-large-xxl: min-width 48.0625em max-width 64em;
+$breakpoint-large-xl: min-width 48.0625em max-width 58.75em;
+$breakpoint-large: max-width 48.0625em;
+$breakpoint-medium: max-width 37.5em;
+$breakpoint-medium-large: min-width 37.5em max-width 48.0625em;
+$breakpoint-small-large: min-width 30em max-width 48.0625em;
+$breakpoint-small: max-width 30em;
+$breakpoint-x-small: max-width 20em;
+$breakpoint-xx-small-large: min-width 17.5em max-width 48.0625em;
+$breakpoint-xx-small: max-width 17.5em;
+
+$breakpoint-large-below: max-width 48.0625em;
