@@ -1,29 +1,23 @@
 @import
 "bourbon",
-"neat";
+"neat",
 
-@import
 "config/colors",
 "config/grid",
-"config/vars";
+"config/vars",
 
-@import
 "helpers/mixins",
-"helpers/functions";
+"helpers/functions",
 
-@import
 "base/fonts",
 "base/global",
 "base/typography",
-"base/normalize";
+"base/normalize",
 
-@import
-"objects/ui-list";
+"objects/ui-list",
 
-@import
-"layout/grid";
+"layout/grid",
 
-@import
 "components/button",
 "components/footer",
 "components/header",
